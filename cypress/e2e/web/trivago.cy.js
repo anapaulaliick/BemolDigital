@@ -6,7 +6,7 @@ describe('', () => {
     cy.clearCookies()
     cy.visit("https://www.trivago.com.br/", {failOnStatusCode: false})
     cy.get('.not-found__button').click()
-    cy.get('[data-testid="search-form-destination"]').click().type("natal{enter}", { force: true })
+    cy.get('[data-testid="search-form-destination"]').click().type("Manaus{enter}", { force: true })
     cy.get(':nth-child(1) > [data-testid="ssg-element"] > .h-14').click()
     // cy.get('[data-testid="search-suggestions"] >').should('not.exist')
     // cy.wait(1000)

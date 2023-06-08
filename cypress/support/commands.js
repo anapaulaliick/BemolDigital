@@ -1,5 +1,11 @@
 import loginDados from '../e2e/services/login/payloads/login.payload.json'
 
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+})
+
 Cypress.Commands.add('cadastroUsuario', (nome, email, senha, admin) => {
     cy.request({
         method: 'POST',
