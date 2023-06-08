@@ -1,0 +1,22 @@
+{
+  "name": "projetoteste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:Report": "npx cypress run --record --key 3ce279ec-7414-4a99-9eb8-7c53954b2c44"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.14.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "dependencies": {
+    "faker": "^6.6.6",
+    "faker-br": "^0.4.1"
+  }
+}
